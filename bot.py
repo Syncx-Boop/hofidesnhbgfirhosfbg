@@ -27,5 +27,6 @@ async def on_message(message):
 
 
 
-token = "NzcyNTE3ODU5NTIzNjkwNTE3.X571Ug.hylyrNwUy7suE9-4rqSu2byYOQk"
-client.run(token)
+
+with open("token.tk","r") as token_file:
+    client.run(token_file.readline())
